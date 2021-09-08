@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210821 13:01:02.056" rpa="false" schemaversion="2">
+<suite id="s1" name="AvengersListTest" source="C:\Users\acorteal\QANinja\CursoAppiumRobot\tests\avengers\AvengersListTest.robot">
+<kw name="Start Application" library="CommomResource" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${URL_SERVER}</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Android Emulator</arg>
+<arg>app=${EXECDIR}/CursoAppiumRobot/app/twp.apk</arg>
+<arg>udid=emulator-5554</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20210821 13:01:02.388" endtime="20210821 13:01:29.818"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:02.388" endtime="20210821 13:01:29.819"/>
+</kw>
+<test id="s1-t1" name="Delete Captain America from avengeres list">
+<kw name="Go to the main screen" library="CommomResource">
+<kw name="Assure the button &quot;COMEÇAR&quot; is visible" library="HomeResource" sourcename="Assure the button &quot;${word}&quot; is visible">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>${word}</arg>
+<arg>5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20210821 13:01:29.822" endtime="20210821 13:01:32.151"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:29.821" endtime="20210821 13:01:32.151"/>
+</kw>
+<kw name="Click on the button &quot;COMEÇAR&quot;" library="HomeResource" sourcename="Click on the button &quot;${word}&quot;">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>${word}</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" starttime="20210821 13:01:32.153" endtime="20210821 13:01:32.562"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:32.152" endtime="20210821 13:01:32.563"/>
+</kw>
+<kw name="Assure the navigation menu is showing on the screen" library="HomeResource">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BTN_MENU}</arg>
+<arg>5</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20210821 13:01:32.564" endtime="20210821 13:01:33.800"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:32.563" endtime="20210821 13:01:33.800"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:29.820" endtime="20210821 13:01:33.801"/>
+</kw>
+<kw name="Click on the navigation menu" library="NavResource">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${BTN_MENU}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210821 13:01:33.810" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<status status="PASS" starttime="20210821 13:01:33.803" endtime="20210821 13:01:33.978"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:33.802" endtime="20210821 13:01:33.978"/>
+</kw>
+<kw name="Assure that the navigation menu is showing on the screen" library="NavResource">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${NAV_LAYOUT}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20210821 13:01:33.980" endtime="20210821 13:01:35.037"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:33.979" endtime="20210821 13:01:35.037"/>
+</kw>
+<kw name="Click on the &quot;AVENGERS&quot; menu" library="NavResource" sourcename="Click on the &quot;${option}&quot; menu">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>${option}</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" starttime="20210821 13:01:35.039" endtime="20210821 13:01:35.189"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:35.038" endtime="20210821 13:01:35.189"/>
+</kw>
+<kw name="Assure that the avengers page was opened" library="NavResource">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>LISTA</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20210821 13:01:35.191" endtime="20210821 13:01:35.614"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>BUSCA</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20210821 13:01:35.615" endtime="20210821 13:01:36.185"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:35.190" endtime="20210821 13:01:36.186"/>
+</kw>
+<kw name="Click on the &quot;LISTA&quot; card" library="FormResource" sourcename="Click on the &quot;${cardname}&quot; card">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>${cardname}</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" starttime="20210821 13:01:36.188" endtime="20210821 13:01:36.335"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:36.187" endtime="20210821 13:01:36.336"/>
+</kw>
+<kw name="Assure taht the avengers list page is showing" library="AvengersListResource">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>LISTA</arg>
+<arg>5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20210821 13:01:36.337" endtime="20210821 13:01:37.431"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:36.337" endtime="20210821 13:01:37.431"/>
+</kw>
+<kw name="Swipe Captain America card" library="AvengersListResource">
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<arg>88.88</arg>
+<arg>18.22</arg>
+<arg>47.22</arg>
+<arg>18.22</arg>
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<status status="PASS" starttime="20210821 13:01:37.434" endtime="20210821 13:01:39.011"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:37.433" endtime="20210821 13:01:39.011"/>
+</kw>
+<kw name="Press delete button" library="AvengersListResource">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BTN_REMOVE}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20210821 13:01:39.012" endtime="20210821 13:01:39.063"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${BTN_REMOVE}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210821 13:01:39.066" level="INFO">Clicking element 'id=io.qaninja.android.twp:id/btnRemove'.</msg>
+<status status="PASS" starttime="20210821 13:01:39.063" endtime="20210821 13:01:39.144"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:39.012" endtime="20210821 13:01:39.144"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:29.819" endtime="20210821 13:01:39.146"/>
+</test>
+<kw name="Stop Application" library="CommomResource" type="TEARDOWN">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20210821 13:01:39.150" endtime="20210821 13:01:40.642"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:39.149" endtime="20210821 13:01:40.642"/>
+</kw>
+<status status="PASS" starttime="20210821 13:01:02.060" endtime="20210821 13:01:40.642"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="AvengersListTest">AvengersListTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

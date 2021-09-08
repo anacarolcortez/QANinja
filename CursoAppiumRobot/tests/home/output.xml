@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210818 13:30:09.201" rpa="false" schemaversion="2">
+<suite id="s1" name="Robot Scratchpad" source="c:\Users\acorteal\.vscode\extensions\robocorp.robotframework-lsp-0.21.0\src\robotframework_ls\vendored\robotframework_interactive\robot_scratchpad.robot">
+<test id="s1-t1" name="Default Task/Test">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Start Application">
+<msg timestamp="20210818 13:30:10.393" level="FAIL">No keyword with name 'Start Application' found.</msg>
+<status status="FAIL" starttime="20210818 13:30:10.393" endtime="20210818 13:30:10.393"/>
+</kw>
+<kw name="Assure the button &quot;COMEÇAR&quot; is visible">
+<status status="NOT RUN" starttime="20210818 13:30:10.397" endtime="20210818 13:30:10.398"/>
+</kw>
+<kw name="Click on the button &quot;COMEÇAR&quot;">
+<status status="NOT RUN" starttime="20210818 13:30:10.400" endtime="20210818 13:30:10.400"/>
+</kw>
+<kw name="Assure the navigation menu is showing on the screen">
+<status status="NOT RUN" starttime="20210818 13:30:10.403" endtime="20210818 13:30:10.403"/>
+</kw>
+<kw name="Stop Application">
+<status status="NOT RUN" starttime="20210818 13:30:10.406" endtime="20210818 13:30:10.406"/>
+</kw>
+<kw name="Start Application">
+<msg timestamp="20210818 13:30:10.450" level="FAIL">No keyword with name 'Start Application' found.</msg>
+<status status="FAIL" starttime="20210818 13:30:10.450" endtime="20210818 13:30:10.450"/>
+</kw>
+<kw name="Assure the button &quot;COMEÇAR&quot; is visible">
+<status status="NOT RUN" starttime="20210818 13:30:10.453" endtime="20210818 13:30:10.453"/>
+</kw>
+<kw name="Click on the button &quot;COMEÇAR&quot;">
+<status status="NOT RUN" starttime="20210818 13:30:10.456" endtime="20210818 13:30:10.456"/>
+</kw>
+<kw name="Assure the navigation menu is showing on the screen">
+<status status="NOT RUN" starttime="20210818 13:30:10.458" endtime="20210818 13:30:10.458"/>
+</kw>
+<kw name="Stop Application">
+<status status="NOT RUN" starttime="20210818 13:30:10.461" endtime="20210818 13:30:10.461"/>
+</kw>
+<status status="PASS" starttime="20210818 13:30:09.248" endtime="20210818 13:30:16.909"/>
+</kw>
+<status status="PASS" starttime="20210818 13:30:09.247" endtime="20210818 13:30:16.910"/>
+</test>
+<status status="PASS" starttime="20210818 13:30:09.204" endtime="20210818 13:30:16.911"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Scratchpad">Robot Scratchpad</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

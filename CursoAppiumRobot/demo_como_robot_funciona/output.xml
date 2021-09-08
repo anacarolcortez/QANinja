@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210818 10:37:55.285" rpa="false" schemaversion="2">
+<suite id="s1" name="HelloTest" source="C:\Users\acorteal\QANinja\CursoAppiumRobot\demo_como_robot_funciona\HelloTest.robot">
+<test id="s1-t1" name="Deve retornar mensagem de boas vindas">
+<kw name="Hello Robot" library="hello">
+<var>${resultado}</var>
+<arg>Ana Cortez</arg>
+<msg timestamp="20210818 10:37:55.326" level="INFO">${resultado} = Hello, Ana Cortez</msg>
+<status status="PASS" starttime="20210818 10:37:55.325" endtime="20210818 10:37:55.326"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${resultado}</arg>
+<arg>Hello, Ana Cortez</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20210818 10:37:55.326" endtime="20210818 10:37:55.327"/>
+</kw>
+<status status="PASS" starttime="20210818 10:37:55.324" endtime="20210818 10:37:55.327"/>
+</test>
+<status status="PASS" starttime="20210818 10:37:55.287" endtime="20210818 10:37:55.329"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="HelloTest">HelloTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
